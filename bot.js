@@ -63,6 +63,10 @@ bot.on("message", msg => {
    if (msg.content.startsWith(prefix + 'invite')) {
      msg.channel.send('טופס קבלה לטים: https://goo.gl/forms/fZnx2O98Nupa0Fbh2')
    }
+
+   if (msg.content.startsWith(prefix + 'donate')) {
+     msg.channel.send('קישור לתרומות: https://paypal.me/NNackan/25?_ga=1.215025556.282539034.1512403185')
+   }
 });
 
 bot.login(token)
