@@ -19,9 +19,10 @@ bot.on("guildMemberRemove", member => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
 });
 
-var args = message.content.substring(setting.prefix.length).split(" ");
+
 
 bot.on("message", msg => {
+var args = msg.content.substring(setting.prefix.length).split(" ");
 
   if (msg.content.startsWith(prefix + 'ServerInfo')) {
     msg.channel.send({embed:{
