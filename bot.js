@@ -22,8 +22,6 @@ bot.on("guildMemberRemove", member => {
 
 
 bot.on("message", msg => {
-var args = msg.content.substring(setting.prefix.length).split(" ");
-
   if (msg.content.startsWith(prefix + 'ServerInfo')) {
     msg.channel.send({embed:{
       title: 'ServerInfo',
@@ -41,8 +39,6 @@ var args = msg.content.substring(setting.prefix.length).split(" ");
    }
 
    if (msg.content.startsWith(prefix + 'RL')) {
-     if (msg.member.addRole(args[0]).send('אתה כבר בקלאן'))
-
      msg.member.addRole('391639199755010059')
    }
    if (msg.content.startsWith(prefix +'PUBG'))  {
