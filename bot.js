@@ -39,7 +39,6 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'RL')) {
      msg.member.addRole('391639199755010059')
-     if (arg[0] msg.channel.send('אתה כבר בקלאן אחר'))
    }
    if (msg.content.startsWith(prefix +'PUBG'))  {
      msg.member.addRole('391639687464222721')
