@@ -19,6 +19,8 @@ bot.on("guildMemberRemove", member => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
 });
 
+var args = message.content.substring(setting.prefix.length).split(" ");
+
 bot.on("message", msg => {
 
   if (msg.content.startsWith(prefix + 'ServerInfo')) {
@@ -38,6 +40,8 @@ bot.on("message", msg => {
    }
 
    if (msg.content.startsWith(prefix + 'RL')) {
+     if (msg.member.addRole(args[0]) msg.channel.send('אתה כבר בקלאן'))
+
      msg.member.addRole('391639199755010059')
    }
    if (msg.content.startsWith(prefix +'PUBG'))  {
