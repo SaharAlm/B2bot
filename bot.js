@@ -40,7 +40,7 @@ bot.on("message", msg => {
    }
 
    if (msg.content.startsWith(prefix + 'RL')) {
-     if (msg.member.addRole(args[0]) msg.channel.send('אתה כבר בקלאן'))
+     if (msg.member.addRole(args[0]).send('אתה כבר בקלאן'))
 
      msg.member.addRole('391639199755010059')
    }
