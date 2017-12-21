@@ -68,6 +68,10 @@ bot.on("message", msg => {
    if (msg.content.startsWith(prefix + 'donate')) {
      msg.channel.send('קישור לתרומות: https://paypal.me/NNackan/25?_ga=1.215025556.282539034.1512403185')
    }
+
+   if (msg.content.startsWith(prefix + 'ssss')) {
+     msg.member.removeRole('391524702000119829')
+   }
 });
 
 bot.login(token)
