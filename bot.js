@@ -40,7 +40,7 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'RL')) {
      msg.member.addRole('391639199755010059')
-     msg.reply('u got ```rocket league``` clan')
+     msg.reply('```u got rocket leagueu got!```')
    }
    if (msg.content.startsWith(prefix +'PUBG'))  {
      msg.member.addRole('391639687464222721')
