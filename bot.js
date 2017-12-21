@@ -71,7 +71,7 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
      msg.member.removeRole('391524702000119829')
-   } then {
+   } else {
      message.channel.send('ayy')
    }
 });
