@@ -56,7 +56,17 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'CSGO')) {
      msg.member.addRole('391639455884115978')
-     msg.member.send('```u got CounterStrikeGlobalOffensive clan!')
+     msg.channel.send('```u got CounterStrikeGlobalOffensive clan!')
+   }
+
+   if (msg.content.startsWith('Rainbow')) {
+     msg.member.addRole('391966178655862795')
+     msg.channel.send('```u got RainbowSixSiege clan!')
+   }
+
+   if (msg.content.startsWith('Fortnite')) {
+     msg.member.addRole('391640006466207755')
+     msg.channel.send('```u got Fortnite clan!')
    }
 
    if (msg.content.startsWith(prefix + 'sss')) { //למקרה ו... סני יצא חרא
