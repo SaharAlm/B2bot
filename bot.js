@@ -53,7 +53,7 @@ bot.on("message", msg => {
      msg.member.addRole('391639455884115978')
    }
 
-   if (msg.content.startsWith(prefix + 'sss')) {
+   if (msg.content.startsWith(prefix + 'sss')) { //למקרה ו... סני יצא חרא
      msg.member.addRole('391524702000119829')
    }
 
@@ -69,7 +69,7 @@ bot.on("message", msg => {
      msg.channel.send('קישור לתרומות: https://paypal.me/NNackan/25?_ga=1.215025556.282539034.1512403185')
    }
 
-   if (msg.content.startsWith(prefix + 'ssss')) {
+   if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
      msg.member.removeRole('391524702000119829')
    }
 });
