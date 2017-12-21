@@ -4,6 +4,8 @@ const prefix = '#';
 
 var bot = new Discord.Client();
 
+
+
 bot.on("ready", () => {
   console.log('online!')
 
@@ -40,18 +42,21 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'RL')) {
      msg.member.addRole('391639199755010059')
-     msg.reply('```u got rocket leagueu got!```')
+     msg.channel.send('```u got rocket league clan!```')
    }
    if (msg.content.startsWith(prefix +'PUBG'))  {
      msg.member.addRole('391639687464222721')
+     msg.channel.send('```u got Player Unknown BattleGround clan!```')
    }
 
    if (msg.content.startsWith(prefix + 'OW'))  {
      msg.member.addRole('391639844217946113')
+     msg.channel.send('```u got OverWatch clan!```')
    }
 
    if (msg.content.startsWith(prefix + 'CSGO')) {
      msg.member.addRole('391639455884115978')
+     msg.member.send('```u got CounterStrikeGlobalOffensive clan!')
    }
 
    if (msg.content.startsWith(prefix + 'sss')) { //למקרה ו... סני יצא חרא
