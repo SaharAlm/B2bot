@@ -17,7 +17,7 @@ bot.on("guildMemberAdd", member => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has joined to the Team! Conagratz`)
 });
 
-bot.on("guildMemberRemove", function(member, member) => {
+bot.on("guildMemberRemove", (member, member) => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
 });
 
