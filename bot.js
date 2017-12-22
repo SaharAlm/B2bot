@@ -86,7 +86,7 @@ bot.on("message", msg => {
    }
 
    if (msg.content.startsWith(prefix + 'help')) {
-     msg.channel.send(`<391522223992733696> צריכים עזרה! **${member.user.username}**`)
+     msg.channel.send(`<391522223992733696> צריכים עזרה! `)
    }
 
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
