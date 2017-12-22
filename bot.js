@@ -64,7 +64,7 @@ bot.on("message", msg => {
      msg.channel.send('```u got RainbowSixSiege clan!```')
    }
 
-   if (msg.content.startsWith('Fortnite')) {
+   if (msg.content.startsWith(prefix + 'Fortnite')) {
      msg.member.addRole('391640006466207755')
      msg.channel.send('```u got Fortnite clan!')
    }
@@ -83,6 +83,10 @@ bot.on("message", msg => {
 
    if (msg.content.startsWith(prefix + 'donate')) {
      msg.channel.send('קישור לתרומות: https://paypal.me/NNackan/25?_ga=1.215025556.282539034.1512403185')
+   }
+
+   if (msg.content.startsWith(prefix + 'help')) {
+     msg.channel.send(`<391522223992733696> צריכים עזרה! ${member.user.username} `)
    }
 
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
