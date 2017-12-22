@@ -17,7 +17,7 @@ bot.on("guildMemberAdd", member => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has joined to the Team! Conagratz`)
 });
 
-bot.on("guildMemberRemove", member => {
+bot.on("guildMemberRemove", function(member, member) => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
 });
 
@@ -86,7 +86,7 @@ bot.on("message", msg => {
    }
 
    if (msg.content.startsWith(prefix + 'help')) {
-     msg.channel.send(`<@&391548502964174851>` + `${member.user.username}` +"צריך אותך")
+     msg.channel.send(`<@&391548502964174851>`)
    }
 
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
