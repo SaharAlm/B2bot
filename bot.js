@@ -59,7 +59,7 @@ bot.on("message", msg => {
      msg.channel.send('```u got CounterStrikeGlobalOffensive clan!')
    }
 
-   if (msg.content.startsWith('Rainbow')) {
+   if (msg.content.startsWith('RAINBOW')) {
      msg.member.addRole('391966178655862795')
      msg.channel.send('```u got RainbowSixSiege clan!')
    }
