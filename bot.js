@@ -17,13 +17,13 @@ bot.on("guildMemberAdd", member => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has joined to the Team! Conagratz`)
 });
 
-bot.on("guildMemberRemove", (member, member) => {
+bot.on("guildMemberRemove", (member) => {
   member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
 });
 
 
 
-bot.on("message", msg => {
+bot.on("message", (msg, member) => {
   if (msg.content.startsWith(prefix + 'ServerInfo')) {
     msg.channel.send({embed:{
       title: 'ServerInfo',
