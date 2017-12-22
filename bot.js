@@ -92,10 +92,6 @@ bot.on("message", (msg, member, user, username) => {
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
      msg.member.removeRole('391524702000119829')
    }
-
-   if (msg.content === ('hey')) {
-     member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
-   }
 });
 
 bot.login(token)
