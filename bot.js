@@ -23,7 +23,7 @@ bot.on("guildMemberRemove", (member) => {
 
 
 
-bot.on("message", (msg, member) => {
+bot.on("message", (msg, member, user, username) => {
   if (msg.content.startsWith(prefix + 'ServerInfo')) {
     msg.channel.send({embed:{
       title: 'ServerInfo',
