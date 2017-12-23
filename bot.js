@@ -14,11 +14,11 @@ bot.user.setGame('B2ForEver - beta')
 
 bot.on("guildMemberAdd", member => {
   if (member.guild.id === '391521978634469386')
-  member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has joined to the Team! Conagratz`)
+  member.guild.channels.get('391525603192602634').send(`<${member.user.username}> Has joined to the Team! Conagratz`)
 });
 
 bot.on("guildMemberRemove", (member) => {
-  member.guild.channels.get('391525603192602634').send(`**${member.user.username}** Has left the Team! Bye Bye `)
+  member.guild.channels.get('391525603192602634').send(`<${member.user.username}> Has left the Team! Bye Bye `)
 });
 
 
@@ -83,10 +83,6 @@ bot.on("message", (msg, member, user, username) => {
 
    if (msg.content.startsWith(prefix + 'donate')) {
      msg.channel.send('קישור לתרומות: https://paypal.me/NNackan/25?_ga=1.215025556.282539034.1512403185')
-   }
-
-   if (msg.content.startsWith(prefix + 'help')) {
-     msg.channel.send(`<@&391548502964174851> ${member.user.username} צריך אותך`)
    }
 
    if (msg.content.startsWith(prefix + 'ssss')) { //למקרה ו...
