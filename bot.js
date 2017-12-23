@@ -78,7 +78,7 @@ bot.on("message", (msg, member, user, username) => {
    }
 
    if (msg.content.startsWith(prefix + 'invite')) {
-     msg.channel.send('טופס קבלה לטים: https://goo.gl/forms/fZnx2O98Nupa0Fbh2')
+     msg.channel.send('טופס קבלה לטים: https://docs.google.com/forms/d/e/1FAIpQLScY2Y6eN2VHTU2IQfVwa1IHK3dU0PrIKUGdDDrEWE_OEJPSXg/viewform')
    }
 
    if (msg.content.startsWith(prefix + 'donate')) {
